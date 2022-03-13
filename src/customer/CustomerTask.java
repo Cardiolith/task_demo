@@ -2,7 +2,8 @@ package customer;
 
 import io.Input;
 import io.Output;
-import task.*;
+import task.Computable;
+import task.State;
 
 import java.util.Date;
 
@@ -15,7 +16,8 @@ public class CustomerTask implements Computable, Stateful {
 
     @Override
     public Output compute(Input input) {
-        return null;
+        Output output = rules.compute(input);
+        return output;
     }
 
     public Date getStart() {

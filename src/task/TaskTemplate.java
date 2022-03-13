@@ -2,6 +2,7 @@ package task;
 
 import customer.CustomerTask;
 import customer.CustomerTaskTemplate;
+import io.Input;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,11 +20,15 @@ public class TaskTemplate {
         customerTaskTemplate.setScope(this.scope);
         customerTaskTemplate.setCriteria(this.criteria);
         List<CustomerTask> customerTasks = new ArrayList<>();
-        tasks.forEach(task -> {
-            customerTasks.add(task.create());
-        });
+        tasks.forEach(task -> customerTasks.add(task.create()));
         customerTaskTemplate.setTasks(customerTasks);
         return customerTaskTemplate;
+    }
+
+    public boolean containsEvent(Input input) {
+        for (Task task : this.tasks) {
+            if(task)
+        }
     }
 
     public String getId() {

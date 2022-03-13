@@ -1,6 +1,7 @@
 package customer;
 
 import io.Input;
+import io.NonOutput;
 import io.Output;
 import task.Computable;
 import task.Criteria;
@@ -20,6 +21,18 @@ public class CustomerTaskTemplate implements Computable, Stateful {
 
     @Override
     public Output compute(Input input) {
+        if (state == State.FINISHED) {
+            return new NonOutput();
+        }
+
+        if (criteria == Criteria.ANY) {
+
+        } else if (criteria == Criteria.INDEPENDENT) {
+
+        } else if (criteria == Criteria.PRIORITY) {
+
+        }
+
         return null;
     }
 
