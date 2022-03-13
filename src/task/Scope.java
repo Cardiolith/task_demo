@@ -1,5 +1,5 @@
 package task;
 
-public interface Scope {
-    String value();
+public enum Scope {
+    ANY, CAMPAIGN, LIST
 }

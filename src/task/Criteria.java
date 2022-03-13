@@ -1,5 +1,5 @@
 package task;
 
-public interface Criteria {
-
+public enum Criteria {
+    ANY, INDEPENDENT, PRIORITY
 }
