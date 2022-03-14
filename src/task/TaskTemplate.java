@@ -27,8 +27,9 @@ public class TaskTemplate {
 
     public boolean containsEvent(Input input) {
         for (Task task : this.tasks) {
-            if(task)
         }
+
+        return false;
     }
 
     public String getId() {

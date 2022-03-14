@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-public abstract class AbstractRule implements Rule {
+public class AbstractRule implements Rule {
     @NotNull
     protected String value;
     protected Date start;

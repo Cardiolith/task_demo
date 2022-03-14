@@ -2,8 +2,6 @@ package customer;
 
 import io.Input;
 import io.Output;
-import task.Computable;
-import task.State;
 
 import java.util.Date;
 

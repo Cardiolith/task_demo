@@ -3,10 +3,8 @@ package customer;
 import io.Input;
 import io.NonOutput;
 import io.Output;
-import task.Computable;
 import task.Criteria;
 import task.Scope;
-import task.State;
 
 import java.util.List;
 

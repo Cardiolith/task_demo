@@ -1,4 +1,4 @@
-package task;
+package customer;
 
 import io.Input;
 import io.Output;

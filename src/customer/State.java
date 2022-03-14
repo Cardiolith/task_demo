@@ -1,4 +1,4 @@
-package task;
+package customer;
 
 public enum State {
     UNFINISHED, FINISHED

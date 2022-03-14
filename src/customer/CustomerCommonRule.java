@@ -6,16 +6,8 @@ import io.Output;
 import io.RuleOutput;
 import task.CronCycle;
 import task.NonCycle;
-import task.State;
 
-public class CustomerCommonRule extends CustomerAbstractRule implements CustomerRule, Stateful {
-
-    private State state;
-
-    @Override
-    public State state() {
-        return this.state;
-    }
+public class CustomerCommonRule extends CustomerAbstractRule {
 
     @Override
     public Output compute(Input input) {
