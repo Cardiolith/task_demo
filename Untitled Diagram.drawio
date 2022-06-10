@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-06-10T03:10:49.846Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="Fsl83gWQGnOiVwnHE-k0" version="16.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-10T03:22:56.606Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="7_KyJSe2jv1kPYrNM-gR" version="16.6.6" type="github">
   <diagram name="Page-1" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
-    <mxGraphModel dx="782" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1303" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="1c1d494c118603dd-1" value="Pool" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
-          <mxGeometry x="20" y="40" width="750" height="990" as="geometry" />
+          <mxGeometry x="20" y="40" width="940" height="990" as="geometry" />
         </mxCell>
         <mxCell id="1c1d494c118603dd-3" value="EventConsumer" style="swimlane;html=1;startSize=20;" parent="1c1d494c118603dd-1" vertex="1">
           <mxGeometry y="20" width="410" height="970" as="geometry" />
@@ -53,14 +53,37 @@
         <mxCell id="_TT01iQ1H0WmgE9Qsd2v-12" value="groupByCustomerTaskGroup(List&amp;lt;Event&amp;gt;,customerId)" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=30;dashed=0;" vertex="1" parent="1c1d494c118603dd-3">
           <mxGeometry x="20" y="500" width="340" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-18" value="for entrySet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1c1d494c118603dd-3" source="_TT01iQ1H0WmgE9Qsd2v-15" target="_TT01iQ1H0WmgE9Qsd2v-17">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-18" value="for entrySet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1c1d494c118603dd-3" source="_TT01iQ1H0WmgE9Qsd2v-15" target="_TT01iQ1H0WmgE9Qsd2v-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="710" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="_TT01iQ1H0WmgE9Qsd2v-15" value="Map&amp;lt;CustomerTaskGroup, List&amp;lt;Event&amp;gt;&amp;gt; &lt;br&gt;customerTaskGroupWithEvents" style="html=1;" vertex="1" parent="1c1d494c118603dd-3">
           <mxGeometry x="76.25" y="600" width="227.5" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-17" value="&lt;font color=&quot;rgba(0, 0, 0, 0)&quot; face=&quot;monospace&quot;&gt;&lt;span style=&quot;font-size: 0px&quot;&gt;cs&lt;/span&gt;&lt;/font&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="1c1d494c118603dd-3">
-          <mxGeometry x="120" y="710" width="140" height="40" as="geometry" />
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-19" value="customerTaskGroup.batchCompute(events)" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="1c1d494c118603dd-3">
+          <mxGeometry x="65" y="720" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-37" value="CustomerTaskGroup" style="swimlane;html=1;startSize=20;fontStyle=1;collapsible=0;horizontal=1;swimlaneLine=1;strokeWidth=2;swimlaneFillColor=none;" vertex="1" parent="1c1d494c118603dd-1">
+          <mxGeometry x="410" y="20" width="370" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-41" value="batchCompute" style="shape=umlFrame;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=100;height=30;" vertex="1" parent="_TT01iQ1H0WmgE9Qsd2v-37">
+          <mxGeometry x="50" y="70" width="270" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="_TT01iQ1H0WmgE9Qsd2v-37" source="_TT01iQ1H0WmgE9Qsd2v-43" target="_TT01iQ1H0WmgE9Qsd2v-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-43" value="preBatchCompute" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="_TT01iQ1H0WmgE9Qsd2v-37">
+          <mxGeometry x="115" y="110" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-47" value="postBatchCompute" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="_TT01iQ1H0WmgE9Qsd2v-37">
+          <mxGeometry x="115" y="300" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="_TT01iQ1H0WmgE9Qsd2v-37" source="_TT01iQ1H0WmgE9Qsd2v-49" target="_TT01iQ1H0WmgE9Qsd2v-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_TT01iQ1H0WmgE9Qsd2v-49" value="for event exec compute(event)&lt;br&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;" vertex="1" parent="_TT01iQ1H0WmgE9Qsd2v-37">
+          <mxGeometry x="92.5" y="210" width="185" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
